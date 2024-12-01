@@ -3,13 +3,11 @@
 #include <stdio.h>
 #include <math.h>
 
-
 struct GRNNParams {
     float sigma;
     int n_train;
     int n_features;
 };
-
 
 __global__ void patternLayerKernel(
     const float* X_train,
